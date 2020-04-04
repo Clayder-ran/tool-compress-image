@@ -12,15 +12,7 @@ let deep = 0; /* 查询深度 */
  */
 function readDirTree(dirPath) {
   try {
-    // console.log('* dirPath', dirPath)
-    /* 测试路径是否支持读写 */
-    // if(dirPath === '/Users/ran/Documents/python/serVirtual/venv/include/python2.7'){
-    //   let stat = fs.statSync(dirPath);
-    //   console.log('* permitted', stat)
-    //   console.log('* permitted', (stat.mode & parseInt('777', 8)).toString(8))
-    // }
 		fs.accessSync(dirPath, fs.constants.R_OK | fs.constants.W_OK);
-    // console.log('* dirPath after', dirPath)
 
 		deep++;
 

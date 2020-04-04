@@ -1,14 +1,12 @@
 const path = require('path');
-const { fsExists, fsReadFile, fsWriteFile,  } = require('../func/index');
+const { fsExists, fsReadFile, fsWriteFile, desktopPath  } = require('../func/index');
 const OS = require('os')
-
-/* 桌面的路径 */
-const desktopPath = path.resolve(OS.homedir(), './Desktop')
 
 /* 默认配置 */
 const defaultConfig = {
   keys: [],
-  outputPath: desktopPath
+  outputPath: desktopPath,
+  outputFilename: 'compress-${name}'
 }
 
 /* 配置json文件路径 */

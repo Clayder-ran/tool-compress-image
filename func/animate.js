@@ -1,4 +1,4 @@
-const { sleep } = require('./index');
+const { sleep } = require('./my');
 
 const ora = require('ora');
 const chalk = require('chalk')

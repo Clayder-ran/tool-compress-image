@@ -1,14 +1,18 @@
+
+
 module.exports = {
-  ...require('./cwd'),
+  ...require('./my-path'),
   ...require('./File'),
   ...require('./input'),
   ...require('./saveToJson'),
   ...require('./print'),
   ...require('./rimraf'),
-  ...require('./sleep'),
+  ...require('./my'),
   ...require('./prompts'),
   ...require('./animate'),
   ...require('./queue'),
   ...require('./authority'),
-  ...require('./fs')
+  ...require('./fs'),
+  ...require('./resolve-path'),
+  ...require('./filename-template')
 }
