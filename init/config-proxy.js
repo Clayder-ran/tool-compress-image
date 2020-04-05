@@ -10,7 +10,7 @@ const defaultConfig = {
 }
 
 /* 配置json文件路径 */
-const individuationPath = path.resolve(__dirname, './individuation.json')
+const individuationPath = path.resolve(__dirname, './private.json')
 
 /**
  * 读取配置
